@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="my_cal_body">
+        <i id="dark" class="fa-solid fa-moon" onclick="dark_mode()"></i>
+        <table>
+            <tr>
+                <td><input type="text" id="disply_show" value="" maxlength="2" readonly></td>
+            </tr>
+            <tr class="down_from_disply">
+                <td><input type="button" value="C" onclick="disply_delete()"></td>
+                <td><input type="button" value="(" onclick="input('(')"></td>
+                <td><input type="button" value=")" onclick="input(')')"></td>
+                <td><input type="button" value="X" onclick="delete_one()"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="input('7')"></td>
+                <td><input type="button" value="8" onclick="input('8')"></td>
+                <td><input type="button" value="9" onclick="input('9')"></td>
+                <td><input type="button" value="+" onclick="input('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="input('4')"></td>
+                <td><input type="button" value="5" onclick="input('5')"></td>
+                <td><input type="button" value="6" onclick="input('6')"></td>
+                <td><input type="button" value="-" onclick="input('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="input('1')"></td>
+                <td><input type="button" value="2" onclick="input('2')"></td>
+                <td><input type="button" value="3" onclick="input('3')"></td>
+                <td><input type="button" value="*" onclick="input('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="input('0')"></td>
+                <td><input type="button" value="." onclick="input('.')"></td>
+                <td><input type="button" value="/" onclick="input('/')"></td>
+                <td><input type="button" value="=" onclick="result()"></td>
+            </tr>
+        </table>
+    </div>
+    
+<script src="https://kit.fontawesome.com/11fc7ad2e9.js" crossorigin="anonymous"></script>
+<script src="calculator.js"></script>
+</body>
+</html>

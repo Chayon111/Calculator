@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    color: black;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+#dark{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: aqua;
+    background-color: #d6d3d000;
+
+}
+#my_cal_body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #cac7c5;
+}
+#disply_show{
+    font-size: 40px;
+    width: 200px;
+    height: 70px;
+    border: 3px dashed aqua;
+}
+.down_from_disply{
+    margin-top: 25px;
+}
+table{
+    border-collapse: collapse;
+    border-top: none;
+    padding-top: 7px;
+    width: 400px;
+    height: 500px;
+}
+table,tr,td{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;   
+}
+
+input[type=button]{
+    margin: 7px;
+    width: 70px;
+    height: 50px;
+    border: 3px dotted skyblue;
+    border-radius: 40%;
+    font-size: 30px; 
+}
+input[type=button]:hover{
+    background-color: aqua;
+}
